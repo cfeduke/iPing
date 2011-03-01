@@ -11,4 +11,7 @@
 
 @implementation AppController
 
+-(IBAction)startStopPing:(id)sender {
+	
+}
 @end

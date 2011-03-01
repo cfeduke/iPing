@@ -10,7 +10,12 @@
 
 
 @interface AppController : NSObject {
-
+	IBOutlet NSTextView *outputView;
+	IBOutlet NSTextField *hostField;
+	IBOutlet NSButton *startButton;
+	NSTask *task;
+	NSPipe *pipe;
 }
 
+-(IBAction)startStopPing:(id)sender;
 @end
